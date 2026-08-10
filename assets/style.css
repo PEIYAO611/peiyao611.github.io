@@ -245,3 +245,14 @@ p { max-width: var(--measure); margin: 0 0 1.35rem; }
   .hero__grid { grid-template-columns: 1fr; }
   .hero__grid .portrait { max-width: 250px; }
 }
+
+.cite-list { list-style: none; margin: 0; padding: 0; }
+.cite { margin: 0 0 2rem; max-width: 76ch; }
+.cite:last-child { margin-bottom: 0; }
+.cite p { max-width: none; margin: 0; font-size: 0.97rem; line-height: 1.8; color: var(--ink-soft); }
+.cite strong { color: var(--ink); font-weight: 600; }
+.cite__title { color: var(--ink); font-weight: 500; }
+.cite__year { font-size: 0.8rem; font-weight: 500; letter-spacing: 0.16em; color: var(--pink-deep); margin: 2.8rem 0 1.5rem; }
+.cite__year--first { margin-top: 1.4rem; }
+.cite__award { color: var(--pink); font-weight: 500; }
+.cite__note { font-size: 0.9rem; }
