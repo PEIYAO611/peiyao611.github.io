@@ -256,3 +256,5 @@ p { max-width: var(--measure); margin: 0 0 1.35rem; }
 .cite__year--first { margin-top: 1.4rem; }
 .cite__award { color: var(--pink); font-weight: 500; }
 .cite__note { font-size: 0.9rem; }
+
+.section--first h1 { font-size: clamp(2.2rem, 4.5vw, 3.2rem); }
