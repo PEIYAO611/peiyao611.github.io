@@ -258,3 +258,4 @@ p { max-width: var(--measure); margin: 0 0 1.35rem; }
 .cite__note { font-size: 0.9rem; }
 
 .section--first h1 { font-size: clamp(2.2rem, 4.5vw, 3.2rem); }
+.section--first { padding-top: 2rem; padding-bottom: 0; }
