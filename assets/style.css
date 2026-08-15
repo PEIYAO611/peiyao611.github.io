@@ -190,6 +190,9 @@ p { max-width: var(--measure); margin: 0 0 1.35rem; }
 .entry--plain .entry__meta { font-size: 0.88rem; color: var(--ink-soft); }
 .entry--plain .entry__title { font-size: 1.1rem; }
 
+/* year-only meta column, colored like the publications year headings */
+.entry--award .entry__meta { color: var(--pink-deep); font-weight: 500; }
+
 /* ---------- layout helpers ---------- */
 
 .split { display: grid; grid-template-columns: repeat(auto-fit, minmax(275px, 1fr)); gap: clamp(2rem, 5vw, 4rem); align-items: start; }
@@ -256,6 +259,23 @@ p { max-width: var(--measure); margin: 0 0 1.35rem; }
 .cite__year--first { margin-top: 1.4rem; }
 .cite__award { color: var(--pink); font-weight: 500; }
 .cite__note { font-size: 0.9rem; }
+
+.cite-btn {
+  font: inherit;
+  font-size: 0.97rem;
+  color: var(--ink);
+  background: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+.cite-btn:hover { color: var(--pink-deep); }
+.cite-btn.is-copied { color: var(--blue-deep); }
 
 .section--first h1 { font-size: clamp(2.2rem, 4.5vw, 3.2rem); }
 .section--first { padding-top: 2rem; padding-bottom: 0; }
