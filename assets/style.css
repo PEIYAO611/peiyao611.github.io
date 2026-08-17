@@ -253,8 +253,8 @@ p { max-width: var(--measure); margin: 0 0 1.35rem; }
 .cite { margin: 0 0 2rem; max-width: 76ch; }
 .cite:last-child { margin-bottom: 0; }
 .cite p { max-width: none; margin: 0; font-size: 0.97rem; line-height: 1.8; color: var(--ink-soft); }
-.cite strong { color: var(--ink); font-weight: 600; }
-.cite__title { color: var(--ink); font-weight: 500; }
+.cite strong { color: var(--pink-deep); font-weight: 600; }
+.cite__title { color: var(--ink); font-weight: 400; }
 .cite__year { font-size: 0.8rem; font-weight: 500; letter-spacing: 0.16em; color: var(--pink-deep); margin: 2.8rem 0 1.5rem; }
 .cite__year--first { margin-top: 1.4rem; }
 .cite__award { color: var(--pink); font-weight: 500; }
@@ -276,6 +276,56 @@ p { max-width: var(--measure); margin: 0 0 1.35rem; }
 }
 .cite-btn:hover { color: var(--pink-deep); }
 .cite-btn.is-copied { color: var(--blue-deep); }
+
+/* ---------- Google Scholar button ---------- */
+
+.scholar-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.86rem;
+  color: var(--ink);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 1.5px solid var(--rule);
+  border-radius: 999px;
+  margin: 0 0 1.8rem;
+  transition: border-color 0.22s ease, color 0.22s ease, background 0.22s ease;
+}
+.scholar-btn svg { flex: none; }
+.scholar-btn:hover { color: var(--pink-deep); border-color: var(--pink); background: #FFF6FA; }
+
+/* ---------- News: collapsed "Recent" entries + more/less toggle ---------- */
+
+.is-collapsed { display: none; }
+
+.more-btn {
+  display: inline-flex;
+  align-items: center;
+  font: inherit;
+  font-size: 0.86rem;
+  color: var(--ink);
+  background: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border: 1.5px solid var(--rule);
+  border-radius: 999px;
+  margin-top: 1.6rem;
+  transition: border-color 0.22s ease, color 0.22s ease, background 0.22s ease;
+}
+.more-btn:hover { color: var(--pink-deep); border-color: var(--pink); background: #FFF6FA; }
+
+/* ---------- tighter publications list ---------- */
+
+#page-publications .cite { margin-bottom: 1.1rem; }
+#page-publications .cite p { line-height: 1.6; }
+#page-publications .cite__year { margin: 1.8rem 0 0.9rem; }
+#page-publications .cite__year--first { margin-top: 0.6rem; }
+
+/* ---------- tighter honors & awards list ---------- */
+
+#page-honors .entry--plain { padding-block: 0.9rem; }
+#page-honors .entry__body { line-height: 1.6; }
 
 .section--first h1 { font-size: clamp(2.2rem, 4.5vw, 3.2rem); }
 .section--first { padding-top: 2rem; padding-bottom: 0; }
