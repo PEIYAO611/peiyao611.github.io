@@ -54,8 +54,8 @@
     if (recentLabel) recentLabel.classList.add('cite__year--first');
   }
 
-  // Collapse the recent list down to the two newest entries, with a toggle to expand.
-  var visibleCount = 2;
+  // Collapse the recent list down to the three newest entries, with a toggle to expand.
+  var visibleCount = 3;
   if (recentItems.length > visibleCount) {
     var hiddenItems = recentItems.slice(visibleCount);
     hiddenItems.forEach(function (li) { li.classList.add('is-collapsed'); });
